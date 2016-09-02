@@ -1,3 +1,6 @@
+
+require 'pry'
+
 class Flashcard
 
 attr_reader :question, :answer
@@ -8,8 +11,8 @@ attr_reader :question, :answer
   end
 
   def correct?(user_input)
-    return true if user_input == self.answer
-    false
+    # binding.pry
+    user_input == self.answer
   end
 
 end
