@@ -1,5 +1,7 @@
 class Flashcard
+
 attr_reader :question, :answer
+
   def initialize(args = {})
     @question = args.fetch(:question) {"no question"}
     @answer = args.fetch(:answer) {"no answer"}
@@ -9,4 +11,5 @@ attr_reader :question, :answer
     return true if user_input == self.answer
     false
   end
+
 end
