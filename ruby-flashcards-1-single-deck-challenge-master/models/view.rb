@@ -13,7 +13,12 @@ module View
   end
 
   def self.display_incorrect
-    puts "Wrong!"
+  puts "██╗    ██╗██████╗  ██████╗ ███╗   ██╗ ██████╗"
+  puts "██║    ██║██╔══██╗██╔═══██╗████╗  ██║██╔════╝"
+  puts "██║ █╗ ██║██████╔╝██║   ██║██╔██╗ ██║██║  ███╗"
+  puts "██║███╗██║██╔══██╗██║   ██║██║╚██╗██║██║   ██║"
+  puts "╚███╔███╔╝██║  ██║╚██████╔╝██║ ╚████║╚██████╔╝"
+  puts " ╚══╝╚══╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝"
   end
 
   def self.display_final_count(question_correct, question_count)
