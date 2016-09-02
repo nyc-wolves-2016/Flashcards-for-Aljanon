@@ -6,8 +6,17 @@ module View
   end
 
   #puts the question or the answer on the screen.
-  def self.display(text)
+  def self.display(what_we_are_displaying)
     puts "#{text}"
   end
+
+  def self.get_answer(answer)
+    answer
+  end
+
+  def self.get_question(question)
+    question
+  end
+
 
 end
