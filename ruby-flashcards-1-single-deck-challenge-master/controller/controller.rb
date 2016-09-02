@@ -26,10 +26,5 @@ class Controller
 
   end
 
-
 end
 
-# RUNNER CODE WOWOWO
-
-# ARGV[0] == text file
-# Controller.new({quiz: ARGV[0], view: View.new})

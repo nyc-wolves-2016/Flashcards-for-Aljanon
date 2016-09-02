@@ -11,7 +11,6 @@ attr_reader :question, :answer
   end
 
   def correct?(user_input)
-    # binding.pry
     user_input == self.answer
   end
 
