@@ -20,9 +20,8 @@ class Controller
     #information
   end
 
-  def correct?(answer)
-    return true if flashcard.correct? == answer
-    false
+  def correct?(user_input)
+    flashcard.correct?(user_input)
   end
 
 end
