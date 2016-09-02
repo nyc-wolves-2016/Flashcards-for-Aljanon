@@ -1,9 +1,5 @@
-
-require 'pry'
-
 class Flashcard
-
-attr_reader :question, :answer
+  attr_reader :question, :answer
 
   def initialize(args = {})
     @question = args.fetch(:question) {"no question"}

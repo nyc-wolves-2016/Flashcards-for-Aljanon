@@ -4,7 +4,6 @@ require_relative '../models/view'
 require_relative '../flashcard_parser'
 
 class Controller
-
   attr_reader :quiz, :view
 
   def initialize(args)
@@ -23,7 +22,6 @@ class Controller
       end
     end
     view.display_final_count(quiz.questions_correct, quiz.question_count)
-
   end
 
 end
