@@ -1,23 +1,22 @@
 module View
 
-  #calls the question from the controller
-  def self.get_question
-
-  end
-
-  #calls the answer from the controller
-  def self.get_answer
-
-  end
-
   #gets the answer from the user input
-  def self.get_input_answer
+  def self.get_input_answer(answer)
     @user_answer = gets.chomp
   end
 
   #puts the question or the answer on the screen.
-  def self.display(text)
+  def self.display(what_we_are_displaying)
     puts "#{text}"
   end
+
+  def self.get_answer(answer)
+    answer
+  end
+
+  def self.get_question(question)
+    question
+  end
+
 
 end
