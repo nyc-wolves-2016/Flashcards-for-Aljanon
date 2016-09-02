@@ -1,4 +1,3 @@
-require 'pry'
 require_relative 'models/flashcard'
 
 module FlashcardParser
