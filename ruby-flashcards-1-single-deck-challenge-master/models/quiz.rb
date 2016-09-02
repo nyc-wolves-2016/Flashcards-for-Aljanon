@@ -6,16 +6,21 @@ class Quiz
 
   def initialize(args={})
     @flashcards = args.fetch(:flashcards, [])
-    @question_count = args.fetch(:question_count, 0)
-    @questions_correct = args.fetch(:questions_correct, 0)
+    @question_count = @flashcards.count
+    @questions_correct = 0
   end
 
-  def questions_correct
-    @questions_correct += 1 if @flashcards.correct?
+  def load_file(filename)
+    @flashcards = FlashcardParser.parse(filename)
   end
 
-  # def question_count
-  #   @question_count += 1
-  # end
+  def num_questions_correct
+    @questions_correct += 1
+  end
+
+  def correct?(flashcard, user_input)
+    flashcard.correct?(user_input)
+  end
+
 
 end
